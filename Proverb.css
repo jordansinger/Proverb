@@ -3,6 +3,7 @@
 @author Daniel Haim, http://www.ubiquityservers.com
 */
 
+
 styling { spell-check: disabled; }
 
  :document-base {
@@ -25,7 +26,7 @@ script punctuation
 {color: #ff0;}
 
 embedded-javascript
-{color: #ff0;}
+{color: #FBEA38;}
 
 function.js{
 	color: #;
@@ -68,20 +69,20 @@ css property-name{
 tag.open.block {
 }
 
+html{
+	
+	color: #9a9a9a;
+}
 html comment{
 	color: #444;
 }
 
 
-html.paragraph{
-	color: #fff;
-}
-
 html attribute{
-	color: lime;
+	color: #19DD89;
 }
 html attribute-name{
-	color: lime;
+	color: #19DD89;
 }
 
 html attribute-value{
@@ -90,4 +91,13 @@ html attribute-value{
 
 html punctuation.begin, .punctuation.end{
 	color: #555;
+}
+
+html value.value{
+	background: #333;
+	color: #fff;
+}
+
+language-root.html{
+	color: #708D91;
 }
