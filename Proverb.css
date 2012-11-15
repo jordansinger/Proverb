@@ -1,9 +1,7 @@
 /*
 @theme Proverb
 @author Daniel Haim, http://www.ubiquityservers.com
-
 */
-
 
 styling { spell-check: disabled; }
 
@@ -30,7 +28,7 @@ embedded-javascript
 {color: #ff0;}
 
 function.js{
-  color: #;
+	color: #;
 }
 
 /* HTML, XML */
@@ -75,6 +73,21 @@ html comment{
 }
 
 
-html{
+html.paragraph{
 	color: #fff;
+}
+
+html attribute{
+	color: lime;
+}
+html attribute-name{
+	color: lime;
+}
+
+html attribute-value{
+	color:#999;
+}
+
+html punctuation.begin, .punctuation.end{
+	color: #555;
 }
