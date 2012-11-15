@@ -1,6 +1,7 @@
 /*
 @theme Proverb
 @author Daniel Haim, http://www.ubiquityservers.com
+
 */
 
 
@@ -29,7 +30,6 @@ embedded-javascript
 {color: #FBEA38;}
 
 function.js{
-	color: #;
 }
 
 /* HTML, XML */
