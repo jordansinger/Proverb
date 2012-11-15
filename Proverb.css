@@ -1,142 +1,80 @@
 /*
 @theme Proverb
-@override-placeholders css, html, php, php-html
-@author Daniel Haim, http://www.danielhaim.com
+@author Daniel Haim, http://www.ubiquityservers.com
+
 */
-* { spell-check: disabled; }
 
-@base {
-color: #fff;
-background-color: #242424;
-insertion-point-color: #c9205f;
-selection-background-color: #333; }
 
-string { color: #ffc; }
+styling { spell-check: disabled; }
 
-comment, comment > punctuation, comment > delimiter, comment.block, comment.block > punctuation, comment.line, comment.line > punctuation, comment.single-line, comment.single-line > punctuation { color: #fff; }
+ :document-base {
+    color: #fff;
+    background-color: #222;
+    insertion-point-color: #ff0000;
+    selection-background-color: #fff;
+    current-line-background-color: #ff0000;
+}  
 
-function name, identifier.function, class name { color: #ffc; }
+/* Javascript */
 
-function delimiter.parenthesis, function delimiter.separator { color: #fff; }
+script
+{color: #ff0;}
 
-pointer, operator { color: #fff; }
+script string
+{color: #777;}
 
-keyword { color: #e8bf6a; }
+script punctuation
+{color: #ff0;}
 
-variable { color: #aDcE77; }
+embedded-javascript
+{color: #ff0;}
 
-value { color: #e8bf6a; }
+function.js{
+  color: #;
+}
 
-text.html.basic { color: #ffa; }
-
-tag {
-color: #6ce;
-spell-check: disabled; }
-
-embedded-style tag, embedded-javascript tag { color: #9619a5; }
+/* HTML, XML */
 
 html doctype, html doctype name, html doctype punctuation,
 xml processing-instruction, xml processing-instruction string, xml processing-instruction string value { color: #666; }
 
-html string value,
-xml string value { color: #ccc; }
+head.self-closing{
+	color: #ff0000;
+}
 
-html character.entity { color: #CDDE87; }
+/* CSS */
 
-tag.self-closing { color: #9c6; }
+css important{
+	color: #ff0000!important;
+}
 
-styling { spell-check: disabled; }
+css{
+	color: #666;
+}
 
-css comment { color: #187800; }
+css comment{
+	color: #55808d;
+}
 
-css selector { color: #929264; }
+css selector{
+	color: #bbb;
+}
 
-css property-name { color: #95737c; }
+css property-name{
+	color: #ff7e79;
+}
 
-css property-value { color: #929264; }
+/* General */
 
-css punctuation.separator, css punctuation.terminator { color: #929264; }
 
-css important { color: #f96; }
+tag.open.block {
+}
 
-js { color: ; }
+html comment{
+	color: #444;
+}
 
-js delimiter { color: #ccc; }
 
-js keyword, js storage { color: #0cc; }
-
-js comment, js comment.line, js comment.line > punctuation, js comment.single-line, js comment.single-line > punctuation { color: #999; }
-
-js > operator { color: #fff; }
-
-function.js { color: ; }
-
-js string { color: #ff9; }
-
-function.js name { color: #fff; }
-
-embedded.sourcecode.js { color: #fff; }
-
-js constant { color: red; }
-
-php embedded.source, embedded.source.php {
-background: #1a1a1a;
-spell-check: disabled; }
-
-php delimiter.embedded.source, php delimiter.embedded.source keyword { color: #fff; }
-
-php function > name, php identifier.function > name, php class > name {
-color: #EE0F04;
-font-weight: normal; }
-
-php keyword.definition, php keyword.constant.other, php > keyword.constant.other, php container keyword.constant.other, php literal.keyword.constant, php literal.keyword.bool, php literal.keyword.null, php keyword.modifier, php literal.numeric > numeric {
-color: #e8bf6a;
-font-weight: normal; }
-
-php literal.numeric > numeric { background: #1a1a1a; }
-
-php identifier.variable, php > variable, php > variable > operator, php string variable, php identifier.variable > dollar-sign, php delimiter.variable.begin { color: #CDDE87; }
-
-php metadata.phpDoc { color: #776644; }
-
-php value { background: #1a1a1a; }
-
-php identifier.function delimiter { color: #fff; }
-
-php identifier.function delimiter.quote { color: #abc837; }
-
-php.html tag name { color: #e8bf6a; }
-
-php.html tag value { background: #333; }
-
-php.html tag.doctype name { color: #776644; }
-
-ee.tag, ee.operator, ee.attribute-name,
-ee ee.tag > ee.name, ee ee.tag > ee.punctuation, ee ee.tag.conditional,
-ee ee.tag ee.attribute-name { color: #CDDE87; }
-
-ee ee.tag ee.attribute-name { font-weight: normal; }
-
-ee ee.tag.self-closing.conditional { background: #333; }
-
-ee.attribute, ee ee.tag ee.attribute { color: #abc837; }
-
-as3 keyword.as3, as3 keyword.bool { color: #e8bf6a; }
-
-as3 keyword.function.as3 { color: #EE0F04; }
-
-as3 method name, as3 keyword.operators.as3 { color: #fff; }
-
-as3 integral.value { background: #333; }
-
-as3 keyword.class.as3 { color: #CDDE87; }
-
-cfm.tag { color: #CDDE87; }
-
-cfm operator, cfm keyword { color: #e8bf6a; }
-
-cfml.embedded output { color: #fff; }
-
-cfml.embedded coldfusion.embedded { color: #e8bf6a }
-
-function.cfm > parenthesis { color: #CDDE87; }
+html{
+	color: #fff;
+}
