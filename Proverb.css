@@ -68,6 +68,8 @@ css property-name{
 tag.open.block {
 }
 
+tag:has-child(name[text='ul'])
+
 html{
 	
 	color: #9a9a9a;
@@ -90,4 +92,8 @@ html attribute-value{
 
 html punctuation.begin, .punctuation.end{
 	color: #555;
+}
+
+tag:has-child(name[text='ul'])
+{
 }
