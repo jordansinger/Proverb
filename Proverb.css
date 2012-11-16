@@ -1,7 +1,27 @@
 /*
 @theme Proverb
-@author Daniel Haim, http://www.ubiquityservers.com
+@author Daniel Haim, @danielhaim 
+http://www.ubiquityservers.com
 
+
+                ___()___
+           _.-'' ,-'`-. ``-._
+        ,-'    ,'      `.    `-.
+      ,'     ,'          `.     `.
+     /      /              \      \
+    /_     /                \     _\
+      ``-./_..---'''|``---.._\,-''
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+                 ,  |
+                 `..'
+                 
+                                              
 */
 
 
@@ -40,10 +60,29 @@ head.self-closing{
 	color: #ff0000;
 }
 
+punctuation.brace.round.open, punctuation.brace.round.close{
+	color: #888;
+}
+
+string.quoted.single{
+	color:#888;
+}
+
+keyword.control{
+	color: #e71e86;
+}
 /* CSS */
 
-css important{
-	color: #ff0000!important;
+keyword.important.css{
+	color: #d6257b!important;
+}
+
+constant.numeric.css{
+	color: #ab1c61;
+}
+
+keyword.other.unit.css{
+	color: #ab1c61;
 }
 
 css{
@@ -68,8 +107,6 @@ css property-name{
 tag.open.block {
 }
 
-tag:has-child(name[text='ul'])
-
 html{
 	
 	color: #9a9a9a;
@@ -80,10 +117,10 @@ html comment{
 
 
 html attribute{
-	color: lime;
+	color: #999;
 }
 html attribute-name{
-	color: lime;
+	color: #999;
 }
 
 html attribute-value{
@@ -96,4 +133,10 @@ html punctuation.begin, .punctuation.end{
 
 tag:has-child(name[text='ul'])
 {
+color: #2d384f;
+
+}
+
+embedded.language-root.php{
+	color: #555;
 }
