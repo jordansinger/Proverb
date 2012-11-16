@@ -15,7 +15,7 @@ styling { spell-check: disabled; }
     current-line-background-color: #ff0000;
 }  
 
-/* Javascript */
+/* Javascript, Scripts */
 
 script
 {color: #ff0;}
@@ -27,10 +27,9 @@ script punctuation
 {color: #ff0;}
 
 embedded-javascript
-{color: #FBEA38;}
+{color: #ff0;}
 
-function.js{
-}
+function.js{}
 
 /* HTML, XML */
 
@@ -79,10 +78,10 @@ html comment{
 
 
 html attribute{
-	color: #19DD89;
+	color: lime;
 }
 html attribute-name{
-	color: #19DD89;
+	color: lime;
 }
 
 html attribute-value{
@@ -91,13 +90,4 @@ html attribute-value{
 
 html punctuation.begin, .punctuation.end{
 	color: #555;
-}
-
-html value.value{
-	background: #333;
-	color: #fff;
-}
-
-language-root.html{
-	color: #708D91;
 }
