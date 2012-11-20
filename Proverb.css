@@ -24,69 +24,89 @@ http://www.ubiquityservers.com
                                               
 */
 
-
 styling { spell-check: disabled; }
- 
-:document-base {
-	color: #fff;
-	background-color: #222;
-	insertion-point-color: #ff0000;
-	selection-background-color: #fff;
-	current-line-background-color: #ff0000; }
- 
+
+ :document-base {
+    color: #fff;
+    background-color: #222;
+    insertion-point-color: #ff0000;
+    selection-background-color: #fff;
+    current-line-background-color: #ff0000;
+}  
+
 /* Javascript, Scripts */
-script { color: #ff0; }
- 
-	script string { color: #777; }
- 
-	script punctuation { color: #ff0; }
- 
-embedded-javascript { color: #ff0; }
- 
-function.js {  }
- 
+
+script
+{color: #fcfe54;}
+
+script string
+{color: #777;}
+
+script punctuation
+{color: #fcfe54;}
+
+embedded-javascript
+{color: #fcfe54;}
+
+function.js{}
+
 /* HTML, XML */
+
 html doctype, html doctype name, html doctype punctuation,
 xml processing-instruction, xml processing-instruction string, xml processing-instruction string value { color: #666; }
- 
-head.self-closing { color: #ff0000; }
- 
-punctuation.brace.round.open, punctuation.brace.round.close { color: #888; }
- 
-string.quoted.single { color: #888; }
- 
-keyword.control { color: #e71e86; }
- 
+
+head.self-closing{
+	color: #ff0000;
+}
+
 /* CSS */
-keyword.important.css { color: #d6257b!important; }
- 
-constant.numeric.css { color: #ab1c61; }
- 
-keyword.other.unit.css { color: #ab1c61; }
- 
-css { color: #666; }
- 
-	css comment { color: #55808d; }
- 
-	css selector { color: #bbb; }
- 
-	css property-name { color: #ff7e79; }
- 
+
+css important{
+	color: #7273ca!important;
+}
+
+css{
+	color: #7f7f7f;
+}
+
+css comment{
+	color: #9093ff;
+}
+
+css selector{
+	color: #54fe54;
+}
+
+css property-name{
+	color: #ff7e79;
+}
+
 /* General */
-tag.open.block {  }
- 
-html { color: #9a9a9a; }
- 
-	html comment { color: #444; }
- 
-	html attribute { color: #999; }
- 
-	html attribute-name { color: #999; }
- 
-	html attribute-value { color: #999; }
- 
-	html punctuation.begin, .punctuation.end { color: #555; }
- 
-tag:has-child(name[text='ul']) { color: #2d384f; }
- 
-embedded.language-root.php { color: #555; }
+
+
+tag.open.block {
+}
+
+html{
+	
+	color: #9093ff;
+}
+html comment{
+	color: #444;
+}
+
+
+html attribute{
+	color: #54fe54;
+}
+html attribute-name{
+	color: #54fe54;
+}
+
+html attribute-value{
+	color:#999;
+}
+
+html punctuation.begin, .punctuation.end{
+	color: #7f7f7f;
+}
