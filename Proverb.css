@@ -1,7 +1,7 @@
 /*
 @theme Proverb
 @author Daniel Haim, @danielhaim 
-http://www.ubiquityservers.com
+http://www.danielhaim.com
 
 
                 ___()___
@@ -62,11 +62,11 @@ head.self-closing{
 /* CSS */
 
 css important{
-	color: #7273ca!important;
+	color: #fdfc00!important;
 }
 
 css{
-	color: #7f7f7f;
+	color: #ff2f98;
 }
 
 css comment{
@@ -74,11 +74,11 @@ css comment{
 }
 
 css selector{
-	color: #54fe54;
+	color: #1d8ffd;
 }
 
 css property-name{
-	color: #ff7e79;
+	color: #54fe54;
 }
 
 /* General */
