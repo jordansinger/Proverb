@@ -48,15 +48,54 @@ script punctuation
 embedded-javascript
 {color: #fcfe54;}
 
+variable.function{
+	color: #1d8ffd;
+}
+
+string.quoted{
+	color: #1d8ffd;
+}
 function.js{}
+
+punctuation.delimiter{
+	color: #FFF!important;
+}
+
+brace.round{
+	color: #EFEFEF;
+}
+
+variable.function.method{
+	color: #ff7bac!important;
+}
 
 /* HTML, XML */
 
 html doctype, html doctype name, html doctype punctuation,
 xml processing-instruction, xml processing-instruction string, xml processing-instruction string value { color: #666; }
 
+language-root.html{
+	color: #E9E9E9;
+}
+
+punctuation.begin, punctuation.end{
+	color: #7964c9!important;
+	background: #2e2a4e;
+}
+
+.entity.name{
+color: #7964c9;
+}
 head.self-closing{
 	color: #ff0000;
+}
+
+comment.block.html{
+	color: #e9e9e9;
+	background: #333;
+}
+html attribute-value.value {
+	color: #FFF!important;
 }
 
 /* CSS */
@@ -85,6 +124,7 @@ css property-name{
 
 
 tag.open.block {
+background: #2e2a4e;
 }
 
 html{
@@ -100,13 +140,10 @@ html attribute{
 	color: #54fe54;
 }
 html attribute-name{
-	color: #54fe54;
+	color: #7964c9;
+	background: #333;
 }
 
 html attribute-value{
 	color:#999;
-}
-
-html punctuation.begin, .punctuation.end{
-	color: #7f7f7f;
 }
