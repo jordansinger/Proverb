@@ -28,7 +28,7 @@ styling { spell-check: disabled; }
 
  :document-base {
     color: #fff;
-    background-color: #222;
+    background-color: rgba(0,0,0,0.89);
     insertion-point-color: #ff0000;
     selection-background-color: #fff;
     current-line-background-color: #101010;
@@ -97,7 +97,7 @@ html attribute-value.value {
 }
 
 attribute-value.value{
-	background: #ff5844;
+	background: #444;
 }
 
 /* CSS */
