@@ -24,406 +24,132 @@ http://www.danielhaim.com
                                               
 */
 
-styling {
+styling { spell-check: disabled; }
 
-
-	spell-check: disabled;
-
-
-}
-
-
-:document-base {
-
-
-	color: #fff;
-
-
-	background-color: rgba(0, 0, 0, 0.90);
-
-
-	insertion-point-color: #7564a6;
-
-
-	selection-background-color: rgba(117, 100, 166, 0.2);
-
-
-	current-line-background-color: #101010;
-
-
-}
-
-
-php punctuation {
-
-
-}
-
-
-php constant {
-
-
-	color: #ef324a;
-
-
-}
-
-
-php constant.numeric.integer {
-
-
-	color: #00baa0;
-
-
-}
-
-
-php constant.numeric.float {
-
-
-	color: #008b77;
-
-
-}
-
-
-operator.assignment {
-
-
-	color: #c92415;
-
-
-}
-
-
-php keyword.control {
-
-
-	background: #6bb866;
-
-
-	color: #111;
-
-
-}
-
-
-punctuation.bracket.angle.open, {
-
-
-	color: #00baa0;
-
-
-}
-
+ :document-base {
+    color: #fff;
+    background-color: rgba(0,0,0,0.89);
+    insertion-point-color: #ff0000;
+    selection-background-color: #fff;
+    current-line-background-color: #101010;
+}  
 
 /* Javascript, Scripts */
 
+script
+{color: #fcfe54;}
 
-script {
+script string
+{color: #777;}
 
+script punctuation
+{color: #fcfe54;}
 
-	color: #fcfe54;
+embedded-javascript
+{color: #fcfe54;}
 
-
-}
-
-
-script string {
-
-
-	color: #777;
-
-
-}
-
-
-script punctuation {
-
-
-	color: #fcfe54;
-
-
-}
-
-
-embedded-javascript {
-
-
-	color: #fcfe54;
-
-
-}
-
-
-variable.function {
-
-
+variable.function{
 	color: #1d8ffd;
-
-
 }
 
-
-string.quoted {
-
-
+string.quoted{
 	color: #00a2ab;
-
-
 }
+function.js{}
 
-
-function.js {
-
-
-}
-
-
-punctuation.delimiter {
-
-
+punctuation.delimiter{
 	color: #FFF!important;
-
-
 }
 
-
-brace.round {
-
-
+brace.round{
 	color: #EFEFEF;
-
-
 }
 
-
-variable.function.method {
-
-
+variable.function.method{
 	color: #ff7bac!important;
-
-
 }
-
 
 /* HTML, XML */
 
+html doctype, html doctype name, html doctype punctuation,
+xml processing-instruction, xml processing-instruction string, xml processing-instruction string value { color: #666; }
 
-html doctype, html doctype name, html doctype punctuation, xml processing-instruction, xml processing-instruction string, xml processing-instruction string value {
-
-
-	color: #666;
-
-
-}
-
-
-language-root.html {
-
-
+language-root.html{
 	color: #E9E9E9;
-
-
 }
 
+punctuation.begin, punctuation.end.html{}
 
-css punctuation.begin, css punctuation.end {
-
-
-	color: #7564a6;
-
-
+.entity.name{
+color: #7964c9;
 }
-
-
-.entity.name {
-
-
-	color: #7964c9;
-
-
-}
-
-
-head.self-closing {
-
-
+head.self-closing{
 	color: #ff0000;
-
-
 }
 
-
-comment.block.html {
-
-
+comment.block.html{
 	color: #FFF;
-
-
-	background: #555;
-
-
+	background: #FF0000;
 }
-
 
 html attribute-value.value {
-
-
 	color: #FFF!important;
-
-
 }
 
-
-attribute-value.value {
-
-
+attribute-value.value{
 	background: #444;
-
-
 }
-
 
 /* CSS */
 
-
-css comment {
-
-
-	color: #7564a6;
-
-
-}
-
-
-css url {
-
-
-	color: #3264b3;
-
-
-}
-
-
-css important {
-
-
+css important{
 	color: #fdfc00!important;
-
-
 }
 
-
-css {
-
-
+css{
 	color: #ff2f98;
-
-
 }
 
-
-css comment {
-
-
+css comment{
 	color: #e2ac4f;
-
-
 }
 
-
-css punctuation {
-
-
-	color: #add54d;
-
-
+css selector{
+	color: #777;
 }
 
-
-css css.selector {
-
-
-	color:#77
-
-
+css property-name{
+	color: #fff;
+	background: #333;
 }
-
-
-css property-name {
-
-
-	color: #7bdebd;
-
-
-}
-
 
 /* General */
 
-
 tag.open {
-
-
-	color: #888!;
-
-
+color: #888!;
 }
 
-
-tag.close {
-
-
-	color: #999!important;
-
-
-}
-
-
-html {
-
-
+ tag.close{
+color: #999!important;
+ }
+ 
+html{
+	
 	color: #9093ff;
-
-
 }
-
-
-html comment {
-
-
+html comment{
 	color: #444;
-
-
 }
 
 
-html attribute {
-
-
+html attribute{
 	color: #54fe54;
-
-
 }
-
-
-html attribute-name {
-
-
+html attribute-name{
 	color: #7964c9;
-
-
 	background: #333;
-
-
 }
 
-
-html attribute-value {
-
-
+html attribute-value{
 	color:#999;
-
-
 }
