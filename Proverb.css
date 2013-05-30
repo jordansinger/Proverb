@@ -1,7 +1,7 @@
 /*
-@theme Proverb
-@author Daniel Haim, @danielhaim 
-http://www.danielhaim.com
+@theme Proverb for Espresso App
+@author Daniel Haim
+@url http://www.danielhaim.com
 
 
                 ___()___
@@ -24,132 +24,60 @@ http://www.danielhaim.com
                                               
 */
 
-styling { spell-check: disabled; }
-
- :document-base {
+styling { spell-check: disabled }
+:document-base {
     color: #fff;
-    background-color: rgba(0,0,0,0.89);
-    insertion-point-color: #ff0000;
-    selection-background-color: #fff;
+    background-color: rgba(32,38,44,0.98);
+    insertion-point-color: #f6ded2;
+    selection-background-color: rgba(246,222,210,0.6);
     current-line-background-color: #101010;
-}  
-
-/* Javascript, Scripts */
-
-script
-{color: #fcfe54;}
-
-script string
-{color: #777;}
-
-script punctuation
-{color: #fcfe54;}
-
-embedded-javascript
-{color: #fcfe54;}
-
-variable.function{
-	color: #1d8ffd;
 }
+script { color: #fcfe54 }
+    script string { color: #777 }
+    script punctuation { color: #fcfe54 }
+embedded-javascript { color: #fcfe54 }
+variable.function { color: #1d8ffd }
+string.quoted { color: #00a2ab }
+function.js {
 
-string.quoted{
-	color: #00a2ab;
 }
-function.js{}
+punctuation.delimiter { color: #FFF!important }
+brace.round { color: #EFEFEF }
+variable.function.method { color: #ff7bac!important }
+html doctype,
+html doctype name,
+html doctype punctuation,
+xml processing-instruction,
+xml processing-instruction string,
+xml processing-instruction string value { color: #666 }
+language-root.html { color: #E9E9E9 }
+punctuation.begin,
+punctuation.end.html {
 
-punctuation.delimiter{
-	color: #FFF!important;
 }
-
-brace.round{
-	color: #EFEFEF;
+.entity.name { color: #7964c9 }
+head.self-closing { color: #ff0000 }
+comment.block.html {
+    color: #FFF;
+    background: #444;
 }
-
-variable.function.method{
-	color: #ff7bac!important;
-}
-
-/* HTML, XML */
-
-html doctype, html doctype name, html doctype punctuation,
-xml processing-instruction, xml processing-instruction string, xml processing-instruction string value { color: #666; }
-
-language-root.html{
-	color: #E9E9E9;
-}
-
-punctuation.begin, punctuation.end.html{}
-
-.entity.name{
-color: #7964c9;
-}
-head.self-closing{
-	color: #ff0000;
-}
-
-comment.block.html{
-	color: #FFF;
-	background: #FF0000;
-}
-
-html attribute-value.value {
-	color: #FFF!important;
-}
-
-attribute-value.value{
-	background: #444;
-}
-
-/* CSS */
-
-css important{
-	color: #fdfc00!important;
-}
-
-css{
-	color: #ff2f98;
-}
-
-css comment{
-	color: #e2ac4f;
-}
-
-css selector{
-	color: #777;
-}
-
-css property-name{
-	color: #fff;
-	background: #333;
-}
-
-/* General */
-
-tag.open {
-color: #888!;
-}
-
- tag.close{
-color: #999!important;
- }
- 
-html{
-	
-	color: #9093ff;
-}
-html comment{
-	color: #444;
-}
-
-
-html attribute{
-	color: #54fe54;
-}
-html attribute-name{
-	color: #7964c9;
-	background: #333;
-}
-
-html attribute-value{
-	color:#999;
-}
+html attribute-value.value { color: #FFF!important }
+attribute-value.value { background: #444 }
+css important { color: #fdfc00!important }
+css { color: #ff2f98 }
+    css comment { color: #e2ac4f }
+    css selector { color: #777 }
+    css property-name {
+        color: #fff;
+        background: #333;
+    }
+tag.open { color: #888! }
+tag.close { color: #999!important }
+html { color: #9093ff }
+    html comment { color: #444 }
+    html attribute { color: #54fe54 }
+    html attribute-name {
+        color: #7964c9;
+        background: #333;
+    }
+    html attribute-value { color: #999 }
